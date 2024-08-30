@@ -1,4 +1,3 @@
-// src/navigation/AppRouter.js
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomeScreen from '../screens/HomeScreen';
@@ -10,7 +9,10 @@ import Navbar from '../components/Navbar';
 function AppRouter() {
   return (
     <Router>
-      <Navbar /> {/* Lägg till navigeringskomponenten här */}
+      <header>
+        <img src="/images/sign-png.png" alt="Header Image" style={{ width: '100%', height: '190px', marginTop: '20px', marginBottom: '20px' }} />
+      </header>
+      <Navbar /> 
       <Routes>
         <Route path="/" element={<HomeScreen />} />
         <Route path="/about" element={<About />} />
