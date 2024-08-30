@@ -19,7 +19,7 @@ const navbarStyles = {
       display: 'flex',
     },
     li: {
-      marginRight: '200px',
+      marginRight: '100px',
     },
     link: {
       color: 'black',
