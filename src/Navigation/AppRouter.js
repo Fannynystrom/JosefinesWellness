@@ -1,4 +1,3 @@
-// src/navigation/AppRouter.js
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomeScreen from '../screens/HomeScreen';
@@ -12,9 +11,19 @@ function AppRouter() {
   return (
     <Router>
 
-<header>
-<img src="/images/sign-png.png" alt="Header Image" style={{ width: '100%', height: '190px', marginTop: '20px', marginBottom: '20px' }} />
-</header>
+<div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '20px', marginBottom: '20px' }}>
+  <img 
+    src="/images/jjrr.png" 
+    alt="Header Image" 
+    style={{ 
+      width: '50%', 
+      height: '100px', 
+      boxShadow: '4px -2px 8px rgba(0, 0, 0, 0.1)' 
+    }} 
+  />
+</div>
+
+
       <Navbar />
       <Routes>
         <Route path="/" element={<HomeScreen />} />

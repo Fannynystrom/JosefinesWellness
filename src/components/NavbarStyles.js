@@ -1,13 +1,19 @@
 
 
 const navbarStyles = {
+  container: {
+    width: '100%', 
+    display: 'flex',
+    justifyContent: 'center', 
+  },
     nav: {
+      maxWidth: '1000px', 
         backgroundColor: '#fff', 
         padding: '0.5rem 2rem',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
-        boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
+        boxShadow: '0 2px 0px rgba(0,0,0,0.1)',
         position: 'sticky', 
         top: 0,
         zIndex: 1000,
@@ -19,7 +25,7 @@ const navbarStyles = {
       display: 'flex',
     },
     li: {
-      marginRight: '100px',
+      marginRight: '80px',
     },
     link: {
       color: 'black',
@@ -34,9 +40,6 @@ const navbarStyles = {
 
     
   };
-  
-
-  
   
   export default navbarStyles;
   
